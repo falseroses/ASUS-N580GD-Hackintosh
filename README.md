@@ -30,8 +30,7 @@ If you have a different WIFI card delete: 'AirportBrcmFixup and BrcmPatchRAM kex
 
 ### Working:
 - [x] **Tested with Big Sur 11.4**
-- [x] **Wifi & Bluetooth** Thanks to AirportBrcmFixup and BrcmPatchRAM.  
-Remove AirPortBrcm4360_injector.kext from AirportBrcmFixup.kext or add the value 19.9.9 to MaxKernel in config.plist.
+- [x] **Wifi & Bluetooth** Thanks to AirportBrcmFixup and BrcmPatchRAM. (Removed AirPortBrcm4360_injector.kext from AirportBrcmFixup.kext)
 - [x] **Audio:** Thanks to AppleALC.kext with layout-id=21 in Device Properties.
 - [x] **USB & Webcam:** All internal and external ports (Thanks to SSDT-EC-USBX-LAPTOP.aml & USBmap.kext)
 - [x] **Ethernet:** Realtek RTL8168H (Thanks to RealtekRTL8111.kext)
