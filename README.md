@@ -20,7 +20,7 @@ If you have a different WIFI card delete: 'AirportBrcmFixup and BrcmPatchRAM kex
 | iGPU: | Intel UHD 630 (Mobile) |
 | dGPU: | NVIDIA GeForce GTX 1050 4GB (DISABLED) |
 | SSD: | 256GB Micron 1100 M.2 (MTFDDAV256TBM) |
-| HDD: | 2TB FireCuda (ST2000LX001) |
+| SSHD: | 2TB FireCuda (ST2000LX001) |
 | Wifi/BT: | Dell DW1820A CN-0VW3T3 BCM94350ZAE |
 | Audio: | Conexant Audio CX8150 |
 | Ethernet: | Realtek RTL8168H |
@@ -38,10 +38,10 @@ If you have a different WIFI card delete: 'AirportBrcmFixup and BrcmPatchRAM kex
 - [x] **Sleep/Wake:** Thanks to CPU Powermangement, USB mapping and NVMe Power management (NVMeFix.kext)
 - [x] **CPU Power managemnt:** Thanks to CPUFriend.kext & CPUFriendDataProvider.kext
 - [x] **NVRAM:** Thanks to SSDT-PMC.aml.  
-Shouldn't be required on HM370 chipsets (according to Dortania), but NVRAM doesn't work without.
+Shouldn't be required on HM370 chipsets (according to Dortania), but NVRAM doesn't work without it.
 - [x] **System Clocks:** Thanks to SSDT-AWAC.aml.  
-Shouldn't be required on HM370 chipsets (according to Dortania), but doens't boot without.
-- [x] **Function Keys:** Thanks to MaLd0n from Olarila's DSDT patches.
+Shouldn't be required on HM370 chipsets (according to Dortania), but doesn't boot without it.
+- [x] **Function Keys:** Thanks to MaLd0n from Olarila's DSDT patches and AsusSMC.
 - [X] **Trackpad:** Thanks to MaLd0n from Olarila's DSDT patches.
 - [X] **HDMI:** HDMI video out works thanks to framebuffer-con2-alldata patch under 'PciRoot(0x0)/Pci(0x2,0x0)'.
 
