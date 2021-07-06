@@ -1,4 +1,4 @@
-# Hackintosh Guide for **ASUS VivoBook 15 Pro N580GD** 
+# Hackintosh EFI for **ASUS VivoBook 15 Pro N580GD** 
 
 **EFI is made with OpenCore 0.7.0 and tested with macOS Big Sur 11.4**
 
