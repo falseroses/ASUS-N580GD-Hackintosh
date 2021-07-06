@@ -1,6 +1,6 @@
 # Hackintosh Guide for **ASUS VivoBook 15 Pro N580GD** 
 
-**This guide its writen for OpenCore 0.7.0 and tested with macOS Big Sur 11.4**
+**EFI is made with OpenCore 0.7.0 and tested with macOS Big Sur 11.4**
 
 ## Info:
 - I replaced the motherboard in my N580VD laptop with a N580GD board, so your specs might differ.
