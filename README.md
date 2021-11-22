@@ -59,7 +59,14 @@ Shouldn't be required on HM370 chipsets (according to Dortania), but doesn't boo
 WARNING! UNDERVOLTING SHOULDN'T BE DANGEROUS, BUT IF YOU DON'T KNOW WHAT YOU'RE DOING YOU MAY DAMAGE YOUR LAPTOP. USE AT YOUR OWN RISK!!! 
 DO NOT TRY THE OVERCLOCKING UNLOCK OFFSET ON A DIFFERENT BIOS VERSION OR LAPTOP!!! 
 
-I undervolted my machine to decrease the CPU temperatures. In order to undervolt you need to disable overclocking-lock in BIOS. Since this option is hidden in the GUI on our systems, you need to extract the offsets with UEFITool and IFR-Extractor. On FW324 you can disable the Overclocking-lock by booting ModifiedGRUBShell.EFI and typing 'setup_var 0xB4B 0x00'  
+I undervolted my machine to decrease the CPU temperatures. In order to undervolt you need to disable overclocking-lock in BIOS. Since this option is hidden in the GUI on our systems, you need to extract the offsets with UEFITool and IFR-Extractor. Example of Overclocking Lock Variable in Bios Version 324:
+
+0x2FC2D 		One Of: Overclocking Lock, VarStoreInfo (VarOffset/VarName): 0x78C, VarStore: 0x1, QuestionId: 0x1BE, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 B6 03 B7 03 BE 01 01 00 8C 07 10 10 00 01 00}
+0x2FC3E 			One Of Option: Disabled, Value (8 bit): 0x0 {09 07 04 00 00 00 00}
+0x2FC45 			One Of Option: Enabled, Value (8 bit): 0x1 (default) {09 07 03 00 30 00 01}
+0x2FC4C 		End One Of {29 02}
+
+On FW324 you can disable the Overclocking-lock by booting ModifiedGRUBShell.EFI and typing 'setup_var 0x78C 0x00'  
 
 I've tested this undervolt in Windows with ThrottleStop first, torture tested for 16 hours in Prime95 on small FFT's, did some video encoding with Handbrake and used the system for about 2 weeks without any BSOD. I then tested these values in MacOS for a couple of days to test system stability. I recommend you try starting with a -100mV CPU and CPU Cache offset. 
 
